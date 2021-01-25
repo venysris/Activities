@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3 id="demo1"></h3>
+        <h3 id="demo2"></h3>
+        <script></script>
+            class student
+            {
+                constructor(name)
+                {
+                    this.studentname = name;
+                }
+                get stuname(){
+                    return this.studentname;
+                }
+                set stuname(x)
+                {
+                    this.studentname=x;
+                }
+            }
+            let student1 = new student ("veny");
+            student1.stuname="venuu";
+            document.getElementById("demo1").innerHTML= student1.stuname;
+        </script>
+    </body>
+</html>

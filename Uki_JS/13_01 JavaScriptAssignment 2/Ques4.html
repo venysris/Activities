@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question No 4</title>
+    </head>
+    <body>
+        <h1>Question No 4</h1>
+        <h3 id="demo1"></h3>
+        <h3 id="demo2"></h3>
+        <h3 id="demo3"></h3>
+        <h3 id="demo4"></h3>
+        <h3 id="demo5"></h3>
+        <h3 id="demo6"></h3>
+        <script>
+                function color(score) {
+                if (score < 10) {
+                    return "Blue";
+                } else if (score < 20) {
+                    return "Red";
+                } else if (score < 30) {
+                    return "Green";
+                } else {
+                    return "It is not a correct colour option";
+                }
+            }
+            document.getElementById("demo1").innerHTML=color(0);
+            document.getElementById("demo2").innerHTML=color(10);
+            document.getElementById("demo3").innerHTML=color(15);
+            document.getElementById("demo4").innerHTML=color(20);
+            document.getElementById("demo5").innerHTML=color(25);
+            document.getElementById("demo6").innerHTML=color(30);
+        </script>
+    </body>
+</html>

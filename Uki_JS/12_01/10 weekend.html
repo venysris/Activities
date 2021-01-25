@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            var day;
+            var dayno= new Date().getDay();
+            switch (dayno)
+            {
+                case 0:
+                case 6:
+                day="This is weekend";
+                break;
+
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                day="This is week day";  
+            }
+            document.getElementById("demo1").innerHTML=day;
+        </script>
+    </body>
+</html>

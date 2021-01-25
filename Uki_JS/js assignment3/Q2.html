@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question No 2</title>
+    </head>
+    <body>
+        <h1>Question No 2</h1>
+        <h3 id="demo1"></h3>
+        <h3 id="demo2"></h3>
+        <h3 id="demo3"></h3>
+        <script>
+            var num=[100, 50, 150, 15, 10];
+            document.getElementById("demo1").innerHTML=num.sort(function(a,b) {return (a-b)});
+            document.getElementById("demo1").innerHTML="The min number is "+ num[0];
+            document.getElementById("demo2").innerHTML=num.sort(function(a,b) {return (b-a)});
+            document.getElementById("demo2").innerHTML="The max number is "+ num[0];
+        </script>
+    </body>
+</html>

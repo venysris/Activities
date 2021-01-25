@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <p id="demo1"></p>
+        
+        <script>
+            var grade="A";
+            var Message;
+            switch (grade)
+            {
+                case "A":
+                Message="Very Good Score";
+                break;
+                case "B":
+                Message="Good Score";
+                
+                break;
+                case "C":
+                Message="Average Score";
+                
+                break;
+                default:
+                Message="poor";
+            }
+            document.getElementById("demo1").innerHTML=Message;
+        </script>
+    </body>
+</html>

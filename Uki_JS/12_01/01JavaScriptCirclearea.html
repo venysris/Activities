@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            function circle(r)
+            {
+                var pi= 3.14;
+                var cir= 2*pi*r;
+                var area= pi*r*r;
+                return "circumference is"+ cir +"<br>"+" Area is"+area;
+            }
+            document.getElementById("demo1").innerHTML=circle(7);
+        </script>
+
+    </body>
+</html>

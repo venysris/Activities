@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <p id="demo1"></p>
+        <button style="background-color:rgb(108, 165, 42);" onclick="Greeting()">Message</button>
+        <script>
+            function Greeting(){
+                var mgs;
+                if (new Date().getHours()<18)
+                {
+                    mgs="Good Morning";
+                }
+                else
+                {
+                    mgs="Good Night";
+                }
+                document.getElementById("demo1").innerHTML=mgs;  
+            }              
+        </script>
+
+    </body>
+</html>

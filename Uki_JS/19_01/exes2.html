@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3 id="demo1"></h3>
+        <h3 id="demo2"></h3>
+        <script>
+            var student=["Ravi", "Raju", "Puvi", "sasi", "raam", "tharan"];
+            var tag="<ol>";
+                for (var i=0; i<student.length; i++)
+                {
+                    tag+="<li>"+student[i]+"</li>";
+                }
+                tag+="</ol>";
+            document.getElementById("demo1").innerHTML=tag;
+        </script>
+    </body>
+</html>

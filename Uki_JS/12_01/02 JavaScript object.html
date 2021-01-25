@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            var student={
+                name:"veny",
+                age: 23,
+                place:"mullaitivu"
+            };
+            var car={
+                model:"BMW",
+                color: "Black",
+                price:"99laks"
+            };
+            document.getElementById("demo1").innerHTML="Student name is " +student.name+ 
+            ". "+ "Student age is "+ student.age;
+            document.getElementById("demo2").innerHTML="Car model is "+car["model"];
+        </script>
+    </body>
+</html>

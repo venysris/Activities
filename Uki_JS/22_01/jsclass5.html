@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3 id="demo1"></h3>
+        <h3 id="demo2"></h3>
+        <script>
+            //Parent
+            class student
+            {
+                constructor(name)
+                {
+                    this.studentname = name;
+                }
+                showname()
+                {
+                    return "Student Name is : "+ this.studentname;
+                }
+            }
+            //Child
+            class subject extends student
+            {
+                constructor (name, sub)
+                {
+                    super(name);    //already assign this variable in student class so use super keyword
+                    this.subject = sub;
+                }
+                showdetail()
+                {
+                    return this.showname() + " , she takes " +this.subject;
+                }
+            }
+            let student1 = new subject ("veny", "Maths");
+            let student2 = new subject ("varny", "Tamil");
+            let student3 = new student ("veny", 24);
+            document.getElementById("demo1").innerHTML= student1.showdetail()+
+            " <br>" +student3.showname(); 
+            document.getElementById("demo2").innerHTML= student3.showdetail(); 
+        </script>
+    </body>
+</html>

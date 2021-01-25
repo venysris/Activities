@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <h1>Question No 5</h1>
+        <p id="demo1"></p>
+        <script>
+            var person={
+                firstName:"Nimal",
+                lastName:"Raj",
+                age:15,
+                city:"Kandy",
+                fullName: function(){
+                    return this.firstName+ " " +this.lastName;
+                }
+            };
+            document.getElementById("demo1").innerHTML="My name is "+ 
+            person.fullName() +"."+" I'm "+ person.age + 
+            " years old. "+ " I live in "+ person.city+".";
+        </script>
+    </body>
+</html>

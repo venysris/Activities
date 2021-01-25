@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <p id="demo1"></p>
+        <button onclick="Message()">Message</button>
+        <script>
+            function Message(){
+                var age=8;
+                if(age<13)
+                {
+                    mgs="You are Child";
+                }
+                else if (age<20){
+                    mgs="You are teenager";
+                }
+                else if (age<40){
+                    mgs="You are Young";
+                }
+                else{
+                    mgs="You are old";
+                }
+                document.getElementById("demo1").innerHTML=mgs;  
+            }              
+        </script>
+
+    </body>
+</html>

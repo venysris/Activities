@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question No 6</title>
+    </head>
+    <body>
+        <h1>Question No 6</h1>
+        <h3 id="demo1"></h3>
+        <h3 id="demo2"></h3>
+        <h3 id="demo3"></h3>
+        <h3 id="demo4"></h3>
+        <h3 id="demo5"></h3>
+        <h3 id="demo6"></h3>
+        <script>
+            var fruits=["Apple"];
+            document.getElementById("demo1").innerHTML=fruits.unshift("Pineapple", "Lemon");
+            document.getElementById("demo1").innerHTML=fruits;
+            document.getElementById("demo2").innerHTML=fruits.splice(3,0,"Orange","Peach");
+            document.getElementById("demo2").innerHTML=fruits;
+        </script>
+    </body>
+</html>
