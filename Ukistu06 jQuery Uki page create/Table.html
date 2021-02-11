@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <style>
+        
+        th{
+            background-color:hsla(216, 100%, 40%, 0.8);
+        }
+        .cell1{
+            background-color:purple;
+        }
+        .cell2{
+            background-color:orange;
+        }
+        .cell3{
+            background-color:rgb(0, 255, 195);
+        }
+        #cell4{
+            background-color: red;
+        }
+        .cell5{
+            background-color:dodgerblue;
+        }
+        .cell6{
+            background-color:tomato; 
+        }
+        .cell7{
+            background-color:hsla(54, 100%, 36%, 1); 
+        }
+        table{
+            border:solid 2px black;
+        }
+    </style>
+
+</head>
+<body>
+    <form style="text-align: right;">
+        <button type="submit" formaction="Main.html">Home</button>
+    </form>
+    <table border="1" cellspacing="0" width="100%"> 
+        <caption><h2>Uki - Time Table</h2></caption>
+        <tr>
+            <th>Time Slot</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td class="cell5">9- 9.30</td>
+            <td class="cell3">Yoga and Meditation</td>
+            <td class="cell2">Personal Coaching 9.15 to 11.15</td>
+            <td class="cell3">Yoga and Meditation</td>
+            <td class="cell3">Yoga and Meditation</td>
+            <td class="cell2">Personal Coaching 9.15 to 11.15</td>
+        </tr>
+        <tr>
+            <td class="cell5">9.30- 10</td>
+            <td class="cell3">Touchtyping and Blogging</td>
+            <td class="cell2">Personal Coaching</td>
+            <td class="cell6" rowspan="2">English - BC Elementary</td>
+            <td class="cell6" rowspan="2">English - BC Elementary</td>
+            <td class="cell2">Personal Coaching</td>
+        </tr>
+        <tr>
+            <td class="cell5">10- 12</td>
+            <td class="cell1">Programming Theory</td>
+            <td class="cell3">Personal Coaching / Touchtyping and Blogging</td>
+            <td class="cell3">Personal Coaching / Touchtyping and Blogging</td>
+        </tr>
+        <tr>
+            <td class="cell5">12- 1</td>
+            <th style="background-color: hsla(105, 100%, 26%, 0.8);" colspan="5">Lunch Break - Carom, Badminton</th>
+        </tr>
+        <tr class="cell1"> 
+            <td class="cell5">1- 2</td>
+            <td>Programming Practicals</td>
+            <td>Programming Theory</td>
+            <td>Programming Theory</td>
+            <td>Programming Theory</td>
+            <td>Programming Theory</td>
+        </tr>
+        <tr class="cell1">
+            <td class="cell5">2- 4</td>
+            <td>Programming Practicals Project</td>
+            <td>Programming Practicals Project</td>
+            <td>Programming Practicals Project</td>
+            <td>Programming Practicals Project</td>
+            <td>Programming Practicals Project</td>
+        </tr>
+        <tr>
+            <td class="cell5">4- 4.15</td>
+            <th style="background-color:hsla(105, 100%, 26%, 0.8);" colspan="5">Tea Break</th>
+        </tr>
+        <tr>
+            <td class="cell5">4.15- 5</td>
+            <td class="cell7">Tech Talk</td>
+            <td class="cell7">TED EX Video Screening</td>
+            <td class="cell7">Team Building</td>
+            <td class="cell7">Team outing / Tech Movie</td>
+            <td id="cell4">Toastmasters Gavel Club</td>
+        </tr>
+    </table>    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script>
+          $(document).ready(function(){
+               $("#hide").click(function(){
+                    $("p").hide();
+               });
+               $("#show").click(function(){
+                    $("p").show();
+               });
+          });
+     </script>
+</head>
+<body>
+     <p>Hide me!</p>
+     <p>Don't Click me! Then i will disappear</p>
+     <p>Click me!</p>
+     <h3 class="test1">I want to be here!</h3>
+     <button id="hide">Hide</button>
+     <button id="show">Show</button>
+</body>
+</html>

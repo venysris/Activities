@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="Index.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideToggle("slow");
+                });
+            });
+            $(document).ready(function(){
+                $(".div1").mouseenter(function(){
+                    alert("The Page Says You entered to Uki !");
+                });
+            });
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("ul").hide();
+                });
+                $("#show").click(function(){
+                    $("ul").show();
+                });
+            });
+            $(document).ready(function(){
+                $(".demo").hover(function(){
+                    $(this).css("background-color", "lightgrey");
+                    }, function(){
+                    $(this).css("background-color", "lightblue");
+                });
+            });
+            $(document).ready(function(){
+                $(".hide").click(function(){
+                    $("h4").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="div0">
+        <p><b><u><a href="Main.html" target="_Self">Home|</u></a>
+        <b><u><a href="form.html" target="_self">Form|</u></a>
+        <b><u><a href="Table.html" target="_self">TimeTable</u></a></p>
+        <img src="uki_banner.png" width="45%"><br>
+        </div><br>
+
+        <div id ="flip">WelCome Uki</div>
+        <div id ="panel">Hey Uki!!!!!</div>
+        </div><br>
+
+        <div class="div1">
+            <p><h3>Welcome to UKI-Stepping Stone to tech life</h3></p>
+            <p>
+                Uki is a Coding School by Yarl IT Hub, 
+                which offers a six months long intensive, 
+                in class training program that trains students to 
+                acquire skills needed to join tech companies as interns/ 
+                junior developers or become entrepreneurs.
+            </p>
+        </div>
+    
+    <br><br>
+        <div class="div3">
+            <p><h3 class="demo">COURSE</h3></p>
+            <p>
+                Uki is now entering a new era- the revolution of online education! Learn form anywhere!
+            <ul>
+                <h5>
+                <li>Product Management</li>
+                <li>Project Management</li>
+                <li>Financial Projection</li>
+                <li>Pitch Deck</li>
+                </h5>
+            </ul>
+            <button id="show">Show</button>
+            <button id="hide">Hide</button>
+            </p>
+            </p>
+        </div>
+
+        <div class="div2">
+            <p><h3 class="demo">CODING ACCELERATOR PROGRAM</h3></p>
+            <p><h4>
+            Uki is a Coding School by Yarl IT Hub, 
+            which offers a six months long intensive, 
+            in class training program that trains students to 
+            acquire skills needed to join tech companies as interns/ 
+            junior developers or become entrepreneurs.
+            </h4>
+            <button class="hide">Details</button>
+            </p>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="footer">
+            2019 © Uki. All Rights Reserved. An initiative by Yarl IT Hub.
+        </div>
+        <br><br><br>
+    </body>
+</html>

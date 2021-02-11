@@ -1,0 +1,102 @@
+body{
+    background-color:87CEEB;
+	width: 90%;
+	margin: auto;
+    padding: 10px;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form{
+
+    margin: 0;
+    padding: 10px;
+    top:10px;
+    right: 10px;
+    overflow: hidden;
+	color: rgb(20, 115, 224);
+    text-align: right;
+    float:right;
+    size: 20px;
+}
+
+.logo
+{
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 120px;
+}
+
+li{
+    display: inline;
+    font: 30px bolder black;
+    padding:10px;
+    background-color:#abb;
+    text-decoration: none;
+}
+
+.div1{
+    background-color:BEBEBE;
+	width: 90%;
+	margin: auto;
+	border-style: solid;
+	border-color: #aaa;
+	outline-color: #ccc;
+}
+
+table, td, th {  
+    border: hidden;
+    text-align: left;
+    padding: 20px;
+    clear: right;
+
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0px 4px;
+  }
+
+  .column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0px 4px;
+  }
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color:rgba(0, 159, 255, 0.5);
+    color: black;
+    text-align: center;
+    font-size: large;
+}
+
+h2{
+    text-align: center;
+    border: solid;
+}
+
+h4{
+    text-indent: 35px;
+    text-align: justify;
+}
+  
+b{
+    font-size: xx-large;
+    padding:20px;
+}
+
