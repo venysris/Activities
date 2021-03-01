@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6>JSON</h6>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        //receiving data
+        var jsontxt='{"name":"shagi","age":23,"place":"jaffna"}'
+        var obj=JSON.parse(jsontxt);
+        document.getElementById('demo').innerHTML="student name"+ obj.name +"student age "+obj.age;
+        
+        //sending data
+        var myobj={name:"veny",place:"mullaithivu"};
+        var myjson=JSON.stringify(myobj);
+        document.getElementById('demo1').innerHTML=myjson;
+
+        //store data
+        var student={name:"thasee",age:20};
+        var ntxt=JSON.stringify(student);
+        localStorage.setItem("mystore",ntxt);
+
+        var stxt=localStorage.getItem("mystore");
+        var nobj=JSON.parse(stxt);
+        document.getElementById('demo2').innerHTML=nobj.name;
+    </script>
+</body>
+</html>

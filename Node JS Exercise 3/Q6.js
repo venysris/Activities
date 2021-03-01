@@ -8,6 +8,7 @@ MongoClient.connect(url,{ useUnifiedTopology: true }, function(err, db) {
         $addFields:{average:" "}
     }],function(err,res){
         if (err)throw err;
+        console.log(res)
         console.log("field added");
         db.close();
     });
